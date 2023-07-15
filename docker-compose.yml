@@ -22,7 +22,7 @@ services:
     env_file: .env
     build: ./frontend/
   gateway:
-    build: ./gateway/
+    build: ./nginx/
     # А тут подключаем volume со статикой к gateway
     volumes:
       - static:/staticfiles/
